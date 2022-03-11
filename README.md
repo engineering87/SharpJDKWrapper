@@ -4,6 +4,8 @@ Project to wrap the execution of Java applications within .NET processes and Win
 ### How it works
 SharpJDKWrapper is developed in the .NET Framework 4.8 and allows the execution of JARs developed in Java within .NET processes on Windows environment. The application can also be installed as a Windows service in order to host JARs for testing purposes, without having to configure Application Servers such as Tomcat.
 
+<img src="SharpJDKWrapper.png" width=40% height=40%>
+
 ### How to use it
 
 To use SharpJDKWrapper, you need to configure the two keys within the application config:
@@ -17,6 +19,10 @@ To use SharpJDKWrapper, you need to configure the two keys within the applicatio
 
 in the *JDK_DIRECTORY* key, you have to write the directory path where the JDK is installed. 
 In the second one *JAR_DIRECTORY*, you have to write the directory path where the JARs are located.
+
+### Future improvements
+
+In order to control (for example start & stop of individual Java services) the individual JARs running, SharpJDKWrapper could expose APIs.
 
 ### Contributing
 Thank you for considering to help out with the source code!
