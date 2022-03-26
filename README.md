@@ -22,6 +22,18 @@ in the *JDK_DIRECTORY* key, you have to write the directory path where the JDK i
 In the second one *JAR_DIRECTORY*, you have to write the directory path where the JARs are located.
 The last one *API_ADDRESS* defines the endpoint on which to expose the APIs.
 
+### API
+
+SharpJDKWrapper exposes some REST APIs to execute some commands, in detail: 
+
+* Retrieve the number of active Java service. 
+* Retrieve the state of a specific Java service. 
+* Stop a specific Java service.
+
+SharpJDKWrapper integrates **Swagger** at the following address:
+
+http://localhost:12345/swagger
+
 ### Future improvements
 
 SharpJDKWrapper can be easily migrated to.NET Core.
