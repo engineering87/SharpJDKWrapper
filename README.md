@@ -1,13 +1,17 @@
 # SharpJDKWrapper
-Project to wrap the execution of Java applications within .NET environment. It is useful in all those contexts where there is a need to quickly host and test Java services without using dedicated Application Servers.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![issues - SharpJDKWrapper](https://img.shields.io/github/issues/engineering87/SharpJDKWrapper)](https://github.com/engineering87/SharpJDKWrapper/issues)
+[![stars - SharpJDKWrapper](https://img.shields.io/github/stars/engineering87/SharpJDKWrapper?style=social)](https://github.com/engineering87/SharpJDKWrapper)
+
+A simple project that enables the execution of Java applications within a .NET environment, ideal for scenarios requiring quick hosting and testing of Java services without the need for dedicated application servers.
 
 ### How it works
-SharpJDKWrapper is developed in the .NET Framework 4.8 and allows the execution of JARs developed in Java within .NET processes on Windows environment. SharpJDKWrapper can also be installed as a Windows service in order to host JARs for testing purposes, without having to configure Application Servers such as Tomcat.
+SharpJDKWrapper, built on .NET Framework 4.8, enables the execution of Java JAR files within .NET processes in a Windows environment. It can be installed as a Windows service, allowing JARs to be hosted for testing purposes without the need for configuring application servers like Tomcat.
 
 <img src="SharpJDKWrapper.png" width=50% height=50%>
 
 ### How to use it
-
 To use SharpJDKWrapper, you need to configure the following keys within the application config:
 
 ```csharp
@@ -18,35 +22,25 @@ To use SharpJDKWrapper, you need to configure the following keys within the appl
 	</appSettings>
 ```
 
-in the *JDK_DIRECTORY* key, you have to write the directory path where the JDK is installed. 
-In the second one *JAR_DIRECTORY*, you have to write the directory path where the JARs are located.
-The last one *API_ADDRESS* defines the endpoint on which to expose the APIs.
+In the `JDK_DIRECTORY` key, specify the path to the directory where the JDK is installed. In `JAR_DIRECTORY`, provide the path to the directory containing the JAR files. 
+Finally, `API_ADDRESS` defines the endpoint at which the APIs will be exposed.
 
 ### API
+SharpJDKWrapper provides REST APIs to perform specific commands, including:
 
-SharpJDKWrapper exposes some REST APIs to execute some commands, in detail: 
-
-* Retrieve the number of active Java service. 
-* Retrieve the state of a specific Java service. 
-* Stop a specific Java service.
-
-SharpJDKWrapper integrates **Swagger** at the following address:
-
-http://localhost:12345/swagger
+* Retrieving the number of active Java services.
+* Checking the status of a particular Java service.
+* Stopping a specific Java service.
 
 ### Future improvements
-
 SharpJDKWrapper can be easily migrated to.NET Core.
 
-### Contributing
+## How to Contribute
 Thank you for considering to help out with the source code!
 If you'd like to contribute, please fork, fix, commit and send a pull request for the maintainers to review and merge into the main code base.
 
-**Getting started with Git and GitHub**
-
- * [Setting up Git for Windows and connecting to GitHub](http://help.github.com/win-set-up-git/)
- * [Forking a GitHub repository](http://help.github.com/fork-a-repo/)
- * [The simple guide to GIT guide](http://rogerdudler.github.com/git-guide/)
+ * [Setting up Git](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
+ * [Fork the repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
  * [Open an issue](https://github.com/engineering87/SharpJDKWrapper/issues) if you encounter a bug or have a suggestion for improvements/features
 
 ### Licensee
