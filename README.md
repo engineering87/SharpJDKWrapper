@@ -14,12 +14,12 @@ SharpJDKWrapper, built on .NET Framework 4.8, enables the execution of Java JAR 
 ### How to use it
 To use SharpJDKWrapper, you need to configure the following keys within the application config:
 
-```csharp
-	<appSettings>
-		<add key="JDK_DIRECTORY" value="C:\JDK\bin"/>
-		<add key="JAR_DIRECTORY" value="C:\JARs"/>
-		<add key="API_ADDRESS" value="http://localhost:12345/"/>
-	</appSettings>
+```xml
+<appSettings>
+	<add key="JDK_DIRECTORY" value="C:\JDK\bin"/>
+	<add key="JAR_DIRECTORY" value="C:\JARs"/>
+	<add key="API_ADDRESS" value="http://localhost:12345/"/>
+</appSettings>
 ```
 
 In the `JDK_DIRECTORY` key, specify the path to the directory where the JDK is installed. In `JAR_DIRECTORY`, provide the path to the directory containing the JAR files. 
